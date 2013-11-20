@@ -145,7 +145,7 @@ void Server::sessionOpened()
     if (ipAddress.isEmpty())
         ipAddress = QHostAddress(QHostAddress::LocalHost).toString();
     statusLabel->setText(tr("The server is running on\n\nIP: %1\nport: %2\n\n"
-                            "Run the Fortune Client example now.")
+                            "Run the Qt TCP Client now.")
                          .arg(ipAddress).arg(tcpServer->serverPort()));
 //! [1]
 }
